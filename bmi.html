@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bmi.css">
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="icon" href="./images/logo.jpg">
+    </head>
+    <body>
+        
+        <div class="navigation">
+            
+            <span class="site-name">BroCode Fitness</span>
+            
+            <nav>
+                <ul>
+                    <!-- <li><a href="">Fitness Tracker</a></li> -->
+                    <li><a href="./main.html">Home</a></li>
+                    <li><a  href="./workout.html">Workout Splits</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-data">Hi,&nbsp;<span id=user-name>&nbsp;brocode</span></div>
+        </div>
+
+        <div class="main-container">
+            <div class="bmi-heading animate__animated animate__zoomInDown animate__slow">BMI Calculator</div>  
+            <div class="sub-bmi">
+                <div class="outer-box">
+                    <form>
+                        <div class="inputs animate__animated animate__zoomInLeft animate__slow animate__delay-1s">
+                            <p class="input-label" >Weight</p>
+                            <input required id="weight-input" type="number" min="1">Kg
+                        </div>
+                        <div class="inputs animate__animated animate__zoomInRight animate__slow animate__delay-1s" >
+                            <p class="input-label" >Height</p>
+                            <input required id="height-input" type="number" min="1">c.m
+                        </div>
+                        <div id="submit-div" class="inputs animate__animated">
+                            <button  id="submit-button" class="animate__animated animate__zoomInUp animate__slow animate__delay-2s" value="1" type="submit">Calcuate</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="result animate__animated">
+                    <div>Your BMI is&nbsp;<span class="bmi-number">50</span></div><br>
+                    <div>You are&nbsp;<span class="bmi-category">Overweight</span></div>
+                </div>
+
+                <div class="bmi-result animate__animated">
+                    <!-- <img src="./images/fat-chad.jpg"> -->
+                </div> 
+                
+            </div>
+        </div>
+        <script rel="text/stylesheet" src="./js/bmi.js"></script>
+    </body>
+</html>

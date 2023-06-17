@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* background: linear-gradient(to right, #74ebd5, #acb6e5);  */
+    font-family: poppins;
+    background: linear-gradient(300deg,#80ffdb,#64dfdf);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+a:visited{
+    color: white;
+}
+
+input:focus{
+    outline:none;
+}
+/*-----------------------------------------nav-------------------------------------------------*/
+nav{
+    margin: auto;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    align-items: center ;
+    color: white;
+}
+nav ul li{
+    display: inline;
+    margin: 5vw;
+    font-size: 1.5rem;
+}
+
+/* li:hover{
+    /* background-color: white; */
+    /* text-decoration: underline;
+    transition: 1s ease-in-out; */
+
+
+.navigation{
+    /* border: 2px solid black; */
+    height: 10vh;
+    z-index: 1;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    top:0;
+    position: sticky;
+    background: #212529;
+}
+
+
+.site-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 5vw;
+}
+
+.user-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 5vw;
+}
+
+a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    /* transition: 1s ease-in-out; */
+}
+
+/*-----------------------------------------------------------------------------centerdiv--------------------------------------*/
+.stats{
+    color: #212529;
+    font-size:3rem ;
+    margin-left: 10%;
+    margin-top: 5vh;
+    font-family: poppins;
+    font-weight: 600;
+}
+
+.calorie-div{
+    background-color: #525252;
+}
+
+.center-div{
+    width: 80%;
+    height: 45vh;
+    margin: auto;
+    /* background-color: red; */
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+.center-div>div{
+    width: 47%;
+    height: 94%;
+    border-radius: 10px;
+}
+
+.lower-div{
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+}
+
+.calorie-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.calorie-left , .calorie-right{
+    z-index: 0;
+    width: 47%;
+    height: 40vh;
+    background-color: #212529;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.big-circle{
+    height: 70%;
+    width: 75%;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-circle{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.cals-consumed{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    /* background-color: red; */
+}
+.left-intake,.total-intake{
+    font-size: 1.6rem;
+    /* background-color: blanchedalmond; */
+}
+.add-cal-btn-container{
+    padding: 10px 0;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.total-intake{
+    margin-bottom: 20px;
+    border-top:2px solid white;
+}
+
+button{
+    border-radius: 0.3rem;
+    font-weight: 500;
+    width: 30vw;
+    font-size: 1.2rem ;
+}
+
+button:hover{
+    transition: 0.3s linear;
+}
+
+
+select{
+    border: none;
+    background-color: #212529;
+    color: white;
+    border: 2px solid white;
+    height: 5vh;
+    width: 6.5vw;
+    margin-left: 2vw;
+    border-radius: 0.4rem;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+#add-water-btn{
+    margin-left: 40%;
+    border: none;
+    background-color: #212529;
+    color: white;
+    border: 2px solid white;
+    height: 4vh;
+    width: 5vw;
+    margin-top: 3vh;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.add-cal-form{
+    position: absolute;
+    /* display: none; */
+    height: 45vh;
+    display: none;
+    width: 40vw;
+    top: 27.5vh;
+    /* border: 2px solid white; */
+    border-radius:20px ;
+    left: 30vw;
+    font-size: 1.8rem;
+    background: #212529;
+    /* background: lightblue; */
+    font-family: poppins;
+    padding:20px ;
+    background: linear-gradient(110deg,#212529,#363636);
+    /* overflow: hidden; */
+    color: white;
+}
+.form-class{
+    /* background-color: red; */
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-div{
+    width: 100%;
+    margin: 10px 0;
+    /* background-color: blue; */
+}
+
+.i-form{
+    font-family: poppins;
+    display: inline-block;
+    width: 60%;
+    font-size: 1.8rem;
+    /* margin: 1vh; */
+    border: none;
+    background-color: inherit;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.item-name{
+    display: inline-block;
+    width: 30%;
+    /* background-color: red; */
+}
+
+.add-cal-btn2{
+    height: 8vh;
+    width: 8vw;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-size: 1.8rem;
+    margin-top: 1vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: #80ffdb;
+    transition: all ease-in-out 0.4s;
+    color: #212529;
+    /* border: 2px solid white; */
+}
+
+.add-cal-btn2:hover , select:hover , #add-water-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.add-cal-btn:hover{
+    transform: scale(1.2);
+}
+
+.add-cal-btn{
+    transition: all ease-in-out 0.3s;
+    border: none;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    height: 5vh;
+    width: 10vw;
+}
+
+
+.lower-div{
+    /* border: 2px solid black; */
+    height: auto;
+    margin-bottom: 20vh;
+    width: 80vw;
+    background-color: #525252;
+    padding: 10px;
+    border-radius: 20px;
+}
+.tracks{
+    font-family: poppins;
+    background-color: #212529;
+    color: white;
+    font-size: 1.4rem;
+    margin: 5px 0;
+    border-radius: 5px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+
+}
+.tracks>div{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+}
+.calorie-tracks{
+    color: #212529;
+    font-size:3rem ;
+    margin-left: 10%;
+    margin-top: 5vh;
+    font-family: poppins;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.clear-button{
+    font-weight:550 ;
+    font: poppins;
+    font-size: 1.6rem;
+    width :10vw;
+    height: 8vh;
+    color: white;
+    background-color: #212529;
+    border-radius: 10px;
+    border:none;
+    transition: all ease-in-out 0.4s;
+    
+}
+
+.clear-button:hover{
+    font-weight:550 ;
+    font: poppins;
+    font-size: 1.6rem;
+    width :10vw;
+    height: 8vh;
+    color: #212529;
+    background-color: #ffffff;
+    border:none;
+    transition: all ease-in-out 0.4s;
+    
+}
+
+.right-right{
+    height: 40%;
+    /* background-color: red; */
+    font-size: 1.5rem;
+    text-align: center;
+} 

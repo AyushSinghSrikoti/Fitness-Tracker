@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/form.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <link rel="icon" href="./images/logo.jpg">
+      
+        <title>Welcome</title>
+    </head>
+    <body>
+        <div id="text-message" class="animate__animated animate__fadeInLeft text-message">Let's begin with a quick form</div>
+        <!-- <div class="human animate__animated animate__fadeInLeft animate__delay-1s" > -->
+        <div class="human animate__animated animate__bounceInUp" >
+            <img src="./images/Humaaans - Sitting.png">
+        </div>
+        <div class="outer-box animate__animated animate__bounceInDown">
+            <form>
+                <div id="first-name" class="inputs">
+                    <p class="input-label" >First Name </p>
+                    <input required id="first-name-input" type="text" maxlength="14">
+                </div>
+                <div id="last-name" class="inputs">
+                    <p class="input-label" >Last Name </p>
+                    <input required id="last-name-input" type="text" maxlength="14">
+                </div>
+                <div id="age" class="inputs">
+                    <p class="input-label" >Age</p>
+                    <input required id="age-input" type="number"
+                    min="2" max="120">
+                </div>
+                <div id="gender" class="inputs">
+                    <p class="input-label" >Gender</p>
+                    <select class="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div id="weight" class="inputs">
+                    <p class="input-label" >Weight</p>
+                    <input required id="weight-input" type="number" min="1"> Kg
+                </div>
+                <div id="height" class="inputs">
+                    <p class="input-label" >Height</p>
+                    <input required id="height-input" type="number" min="1"> c.m
+                </div>
+                <div id="submit-div" class="inputs animate__animated ">
+                    <button  class="animate__animated" id="submit-button" value="1" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script rel="text/javascript" src="./js/form.js"></script>
+    </body>
+</html>

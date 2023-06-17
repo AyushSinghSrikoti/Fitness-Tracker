@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+body{
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    /* background: linear-gradient(to right, #83a4d4, #b6fbff); */
+    font-family: poppins;
+    color: white;
+    /* min-width: 342px; */
+}
+html{
+    min-width: 342px;
+    background: linear-gradient(300deg,#6c757d,#e9ecef);
+    background: linear-gradient(300deg,#80ffdb,#64dfdf);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input{
+    transition: ease-in-out all 0.4s;
+    margin: 3vh;
+}
+
+nav{
+    margin: auto;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    align-items: center ;
+    color: white;
+}
+nav ul li{
+    display: inline;
+    margin: 5vw;
+    font-size: 1.5rem;
+}
+
+/* li:hover{
+    /* background-color: white; */
+    /* text-decoration: underline;
+    transition: 1s ease-in-out; */
+
+
+.navigation{
+    /* border: 2px solid black; */
+    height: 10vh;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    top:0;
+    position: sticky;
+    background: #212529;
+}
+
+
+.site-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 5vw;
+}
+
+.user-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 5vw;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    /* transition: 1s ease-in-out; */
+}
+
+.main-container{
+    /* border: 2px solid black; */
+    height: auto;
+    padding:25px;
+    width: 80vw;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5vh;
+    /* background: #6c757d; */
+    background: #343a40;
+    background: inherit;
+    color: black;
+
+}
+
+.bmi-heading{
+    color: #212529;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 3rem;
+    border-bottom: 2px solid #212529;
+}
+.sub-bmi{
+    margin-top: 15px;
+    /* background-color: #83a4d4; */
+    width: 100%;
+    /* background-color: red; */
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.outer-box{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    /* margin: auto; */
+    height: 40vh;
+    border-radius: 1vw;
+    width: 37%;
+    background-color: inherit;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+}
+.inputs{
+    width: 100%;
+    color: white;
+    color: #212529;
+    font-size: 24px ;
+    height: 8vh;
+    margin-bottom: 20px;
+}
+input:focus{
+    outline:none;
+    caret-color: #212529;
+    /* background-color: #00000090; */
+    /* appearance: none; */
+}
+input{
+    width: 8vw;
+    color: #212529;
+    /* color: #6c757d; */
+    font-size: 24px;
+    font-weight: 500;
+    background-color: inherit;
+    border: none;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: solid 1px #212529;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    font-family:poppins ;
+    /* width: 10vw; */
+}
+.input-label{
+    color: #212529;
+    display: inline;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+#submit-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    height: 100%;
+    height: 10vh;
+    width: 100%;
+}
+
+.images-bmi{
+    border: 10px ridge #212529;
+    width: 80%;
+}
+
+#submit-button{
+    /* background: rgb(29, 29, 30); */
+    color: white;
+    /* background:  #C9EEFF;  */
+    font-weight: 700 ;
+    font-size: 26px;
+    border: none;
+    border-radius: 4vh;
+    border-bottom: 5px solid #212529;
+    background-color: #212529;
+    width: 50%;
+    height: 8vh;
+    /* margin-top: 5vh; */
+    transition: all ease-in-out 0.4s;
+    margin-right: 1.7vw;
+}
+#submit-button:hover{
+    /* color: #212529;
+    background:  #ced4da;  */
+    cursor: pointer;
+}
+
+.result{
+    display: inline-flex;
+    opacity: 0;
+    font-weight: 600;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    width: 36%;
+    height: 25vh;
+    font-size: 1.5rem;
+    color: black;
+    padding-left: 30px;
+    /* background-color:yellow; */
+}
+
+
+/* .bmi-result img{
+    border-radius: 5px;
+} */
+.bmi-result{
+    /* border: 2px solid white; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 27%;
+    /* background-color: purple; */
+    height: 40vh;
+    /* background-color: red; */
+}
+.bmi-category{
+    text-transform: capitalize;
+}
+/*----------------------------------------navbar------------------------------------------------*/
+.result{
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (max-width:600px) {
+    .navigation{
+        height: 8vh;
+
+    }
+    nav ul li{
+        font-size: 1.2rem;
+    }
+    .site-name{
+        /* background-color: red; */
+        font-size: 1.3rem;
+        margin-left: 1vw;
+    }
+    .user-data{
+        /* background-color: red; */
+        font-size: 1.3rem;
+        margin-right: 1vw;
+    }
+    .main-container{
+        width: 90vw;
+        padding: 10px;
+        /* background-color: red; */
+    }
+    .bmi-heading{
+        font-size: 2.4rem;
+        /* background-color: blue; */
+    }
+
+    .outer-box{
+        /* background-color: #64dfdf; */
+        width: 100%;
+    }
+    input{
+        width: 20%;
+    }
+    .inputs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .input-label{
+        font-size: 24px;
+    }
+    
+    #submit-button{
+        margin-top: 0;
+    }
+    .result{
+        font-size: 1.4rem;
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        /* background-color: bisque; */
+    }
+    .bmi-result{
+        width: 75vw;
+        height: auto;
+        display: none;
+        position: absolute;
+        /* height: auto; */
+        /* background-color: red; */
+    }
+    .bmi-result img{
+        width: 80%;
+    }
+}
