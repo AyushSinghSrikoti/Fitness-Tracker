@@ -2,141 +2,59 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="./css/index.css">
-        <script src="https://kit.fontawesome.com/7bd2da3c95.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./images/logo.jpg">
-        <title>Fitness Tracker</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <link rel="icon" href="./images/logo.jpg">
+      
+        <title>Welcome</title>
     </head>
     <body>
-        <div class="navigation">
-            
-            <span class="site-name">BroCode Fitness</span>
-            
-            <nav>
-                <ul>
-                    <!-- <li><a href="">Fitness Tracker</a></li> -->
-                    <!-- <li><a href="/bmi.html">BMI Calculator</a></li>
-                    <li><a  href="/workout.html">Workout Splits</a></li> -->
-                    <li><a href="./bmi.html">BMI Calculator</a></li>
-                    <li><a  href="./workout.html">Workout Splits</a></li>
-                </ul>
-            </nav>
-
-            <div class="user-data">Hi,&nbsp;<span id=user-name>brocode</span></div>
+        <div id="text-message" class="animate__animated animate__fadeInLeft text-message">Let's begin with a quick form</div>
+        <!-- <div class="human animate__animated animate__fadeInLeft animate__delay-1s" > -->
+        <div class="human animate__animated animate__bounceInUp" >
+            <img src="./images/Humaaans - Sitting.png">
         </div>
-
-        <div class="stats" >Your Stats</div>
-        <div class="center-div">
-            <div class="calorie-div">
-                <div class="calorie-left">
-                    <div class="big-circle">
-                        <div class="small-circle">
-                            Calories
-                            <!-- Calorie Intake -->
-                        </div>
-                    </div>
+        <div class="outer-box animate__animated animate__bounceInDown">
+            <form>
+                <div id="first-name" class="inputs">
+                    <p class="input-label" >First Name </p>
+                    <input required id="first-name-input" type="text" maxlength="14">
                 </div>
-                <div class="calorie-right">
-                    <div class="cals-consumed" >Calories Consumed</div>
-                    <div class="left-intake">100</div>
-                    <div class="total-intake">9969</div>
-                    <div class="add-cal-btn-container">
-                        <button type="submit" 
-                        id="add-cal" class="add-cal-btn">Add Item
-                        </button>
-                    </div>
+                <div id="last-name" class="inputs">
+                    <p class="input-label" >Last Name </p>
+                    <input required id="last-name-input" type="text" maxlength="14">
                 </div>
-            </div>
-
-            <!-- <div class="calorie-div">
-                <div class="calorie-left">
-                    <div class="big-circle" style="background-color: lightblue">
-                        <div class="small-circle">
-                            Water
-                        </div>
-                    </div>
+                <div id="age" class="inputs">
+                    <p class="input-label" >Age</p>
+                    <input required id="age-input" type="number"
+                    min="2" max="120">
                 </div>
-                <div class="calorie-right">
-                    <div class="cals-consumed" >Water Consumed</div>
-                    <div class="left-intake">100</div>
-                    <div class="total-intake">9969</div>
-                    <div class="water-intake-container">
-                        <form>
-                            <select>
-                                <option>Glass size</option>
-                                <option>100ml</option>
-                                <option>250ml</option>
-                                <option>500ml</option>
-                                <option>1L</option>
-                            </select>
-                            <select>    
-                                <option>How many?</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                            <button type="submit" id="add-water-btn">Add</button>
-                        </form>    
-                    </div>
+                <div id="gender" class="inputs">
+                    <p class="input-label" >Gender</p>
+                    <select class="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
                 </div>
-            </div> -->
-            <div class="calorie-div">
-                <div class="calorie-left">
-                    <div class="big-circle" id="bmi-circle" style="background-color: lightblue">
-                        <div class="small-circle">
-                            BMI
-                        </div>
-                    </div>
+                <div id="weight" class="inputs">
+                    <p class="input-label" >Weight</p>
+                    <input required id="weight-input" type="number" min="1"> Kg
                 </div>
-                <div class="calorie-right">
-                    <div class="right-right">
-                        Your BMI is:&nbsp<span id="bmi-result">0</span>
-                    </div>
-                    <div id="right-text" class="right-right">
-                          
-                    </div>
+                <div id="height" class="inputs">
+                    <p class="input-label" >Height</p>
+                    <input required id="height-input" type="number" min="1"> c.m
                 </div>
-            </div>
+                <div id="submit-div" class="inputs animate__animated ">
+                    <button  class="animate__animated" id="submit-button" value="1" type="submit">Submit</button>
+                </div>
+            </form>
         </div>
-
-
-
-        <div id="item-form" class="add-cal-form animate__animated">
-            <form class="form-class" >
-                <div class="form-div"> <label for="i1" class="item-name">Item</label><input type="text" id="i1" class="i-form" required>
-                </div>
-                <div class="form-div"> <label for="i2" class="item-name">Calories</label><input type="number" id="i2" class="i-form" required>
-                </div>
-                <div class="form-div" style="display: flex;justify-content: center;"> <button type="submit" class="add-cal-btn2">Add</button></div>
-            </form>    
-        </div>
-
-
-
-        <h1 class="calorie-tracks">Your Calorie Tracks</h1>
-        <div class="lower-div">
-            <div class="tracks" style="height: 8vh;" >
-                <div class="track-item" style="font-weight: 600;font-size: 1.6rem;text-decoration: underline;" >Item Name</div>
-                <div class="track-cals" style="font-weight: 600;font-size: 1.6rem;text-decoration: underline;" >Calories</div>
-                <div class="time-container" style="font-weight: 600;font-size: 1.6rem;text-decoration: underline;" >
-                    Time
-                </div>
-            </div>
-            <ul class="lower-list" >
-                <li>    
-                    
-                </li>
-            </ul>
-
-            <button type="submit" class="clear-button">Clear</button>
-        </div>
-        <script src="./JS/index.js"></script>
+        <script rel="text/javascript" src="./js/form.js"></script>
     </body>
 </html>
